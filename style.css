@@ -1,0 +1,221 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #0d1b2a;
+  color: #fff;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00e5ff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #001220;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar ul li {
+  margin-left: 20px;
+}
+.navbar ul li a {
+  color: #fff;
+  transition: 0.3s;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #00e5ff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 10% 60px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  color: #00e5ff;
+}
+.hero-text .typing {
+  color: #ff0080;
+  font-weight: bold;
+}
+.hero-text .socials a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #00e5ff;
+}
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #00e5ff;
+  color: #000;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.hero-img img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid #00e5ff;
+  box-shadow: 0 0 20px #00e5ff;
+}
+
+/* Skills */
+.skills-container {
+  max-width: 700px;
+  margin: auto;
+}
+.skill-bar {
+  margin: 15px 0;
+}
+.skill-bar p {
+  text-align: left;
+}
+.skill-bar .bar {
+  background: #1a2d40;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.skill-bar .bar span {
+  display: block;
+  height: 100%;
+  background: #00e5ff;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1a2d40;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.card h3 {
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff0080;
+}
+/* Certifications & Achievements */
+.certifications-grid, .achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.cert-card, .ach-card {
+  background: #1a2d40;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+  transition: 0.3s ease-in-out;
+}
+.cert-card:hover, .ach-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 0, 128, 0.5);
+}
+.cert-card i, .ach-card i {
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.contact button {
+  padding: 10px;
+  background: #08bfc5;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+/* Social Icons */
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the whole group of icons */
+  align-items: center;
+  gap: 15px; /* Adjust spacing between the circles */
+  margin-top: 30px; /* Add some space above the icons */
+}
+
+.social-icon-circle {
+  display: flex; /* Use flexbox to center the image inside */
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Size of the white circle */
+  height: 70px; /* Must match width for a perfect circle */
+  background-color: white; /* The white background */
+  border-radius: 50%; /* Makes it a circle */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.social-icon-circle img {
+  width: 60%; /* Adjust size of the logo inside the circle */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 40px; /* Optional: Set a max size for the logo for consistency */
+  max-height: 40px; /* Optional: Set a max size for the logo for consistency */
+}
+
+
+
+/* Footer */
+footer {
+  background: #001220;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
